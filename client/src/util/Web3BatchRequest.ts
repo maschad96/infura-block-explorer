@@ -5,7 +5,7 @@ const Web3 = require('web3');
 export const batchTransactions = async (txnHashes: string[]) => {
     const web3 = new Web3(
         new Web3.providers.WebsocketProvider(
-            'wss://mainnet.infura.io/ws/v3/509e73fa03f342508dc48f829747cf7f'
+            'wss://mainnet.infura.io/ws/v3/676940757cd54393a00b36bd452d16cd'
         )
     );
     const batch = new web3.BatchRequest();
@@ -28,7 +28,7 @@ export const batchTransactions = async (txnHashes: string[]) => {
 export async function batchBlocks(blockNumbers: number[]) {
     const web3 = new Web3(
         new Web3.providers.WebsocketProvider(
-            'wss://mainnet.infura.io/ws/v3/509e73fa03f342508dc48f829747cf7f'
+            'wss://mainnet.infura.io/ws/v3/676940757cd54393a00b36bd452d16cd'
         )
     );
     const blocks: BlockTransactionString[] = [];

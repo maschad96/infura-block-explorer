@@ -9,7 +9,7 @@ const Web3 = require('web3');
 
 const web3 = new Web3(
     new Web3.providers.WebsocketProvider(
-        'wss://mainnet.infura.io/ws/v3/509e73fa03f342508dc48f829747cf7f'
+        'wss://mainnet.infura.io/ws/v3/676940757cd54393a00b36bd452d16cd'
     )
 );
 
