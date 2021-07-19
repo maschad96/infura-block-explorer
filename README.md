@@ -2,10 +2,12 @@
 
 1. You might need to have typescript installed globally, though you shouldn't since it's a devDependency of this project
 2. `git clone https://github.com/maschad96/infura-block-explorer`
-3. CD into the project, run `npm install`
-4. Run `npm start`, it should open a browser tab with the project opened.
+3. `cd infura-block-explorer/client`
+4. `npm install`
+5. `npm run start`
 
-Next steps for the project:
+**Next steps for the project:
+**
 
 1. Calculate Average Block Height
 2. Calculate Average Block Fullness
