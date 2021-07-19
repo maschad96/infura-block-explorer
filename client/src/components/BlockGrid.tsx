@@ -2,7 +2,10 @@ import * as React from 'react';
 import { BlockTransactionString } from 'web3-eth';
 import { BlockCard } from './BlockCard';
 
-export default class BlockGrid extends React.Component<{ blocks: BlockTransactionString[] }> {
+interface GridProps {
+    blocks: BlockTransactionString[];
+}
+export default class BlockGrid extends React.Component<GridProps> {
     render(): JSX.Element {
         return (
             <div className="grid is-3-col ml-3 mr-3 mb-3">

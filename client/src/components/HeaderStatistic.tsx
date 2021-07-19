@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingSkeleton from './LoadingSkeleton';
+import { LoadingSkeleton } from './LoadingSkeletons';
 import { formatThreeDigitNumber } from '../util/Numbers';
 interface HeaderStatisticProps {
     label: string;
