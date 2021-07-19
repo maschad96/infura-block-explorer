@@ -1,0 +1,11 @@
+.c-transaction-grid {
+    &__square {
+        width: 1rem;
+        height: 1rem;
+        background-color: $purple-100;
+
+        &:hover {
+            background-color: $white;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "name": "infura-block-explorer",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-helmet": "^6.1.0",
+        "react-hot-loader": "^4.13.0",
+        "react-loading-skeleton": "^2.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "ws": "^7.5.3"
+    },
+    "scripts": {
+        "clean": "rm dist/bundle.js",
+        "build-dev": "webpack --mode development",
+        "build-prod": "webpack --mode production",
+        "start": "webpack serve --hot --mode development"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-pro": "^5.15.3",
+        "@fortawesome/fontawesome-svg-core": "^1.2.35",
+        "@fortawesome/pro-solid-svg-icons": "^5.15.3",
+        "@fortawesome/react-fontawesome": "^0.1.14",
+        "@hot-loader/react-dom": "^17.0.1",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@types/react-helmet": "^6.1.2",
+        "@types/react-router-dom": "^5.1.8",
+        "@types/websocket": "^1.0.3",
+        "@types/ws": "^7.4.6",
+        "node-sass": "^5.0.0",
+        "svg-inline-loader": "^0.8.2",
+        "svg-url-loader": "^7.1.1",
+        "ts-loader": "^8.2.0",
+        "typescript": "^4.3.5",
+        "web-vitals": "^1.0.1",
+        "web3": "^1.4.0",
+        "webpack-bundle-analyzer": "^4.4.2",
+        "webpack-cli": "^4.7.2",
+        "websocket": "^1.0.34"
+    }
+}

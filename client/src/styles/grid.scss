@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    &.is-2-col {
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+    &.is-3-col {
+        @include md {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+    &.is-4-col {
+        @include md {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+    &.is-10-col {
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 0.625rem;
+    }
+}

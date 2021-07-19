@@ -1,0 +1,132 @@
+.c-sidebar {
+    background-color: $purple-400;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    &__menu {
+        position: absolute;
+        color: $white;
+
+        &__toggle {
+            display: none;
+        }
+
+        &__list {
+            padding: 0;
+            list-style-type: none;
+
+            &:first-of-type {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            &:last-of-type {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            &__item {
+                display: block;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+
+                &__link {
+                    color: $white;
+
+                    svg {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    // Seperate mobile menu styles from the rest
+    @include md-down {
+        height: $mobile-header-height;
+        padding: 1rem;
+
+        &__menu {
+            width: 100%;
+            &__toggle {
+                display: inline-block;
+                appearance: none;
+                background: none;
+                border-radius: 4px;
+                border: 1px solid $white;
+                color: $white;
+                font-size: 1.4rem;
+                outline: none;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                padding: 0.5rem 0.75rem;
+                transform: translateY(-50%);
+            }
+
+            &--open {
+                display: block;
+                transform: translateY(0);
+            }
+
+            background-color: $purple-600;
+            display: none;
+            left: 0;
+            padding: 0.25rem 1rem;
+            top: $mobile-header-height;
+            transform: translateY(-100%);
+        }
+    }
+
+    @include md {
+        height: 100vh;
+        padding: 1.75rem 0;
+        position: fixed;
+        width: $sidebar-width;
+        &__logo {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 1.75rem;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-bottom: 1px solid $white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        &__menu {
+            position: static;
+            &__list {
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                &:last-child {
+                    bottom: 0;
+                }
+                &__item {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    font-size: 0.875rem;
+                    &__title {
+                        display: block;
+                        text-transform: uppercase;
+                    }
+
+                    svg {
+                        margin: 0;
+                        font-size: 1.5rem;
+                        margin-bottom: 0.8125rem;
+                    }
+                }
+            }
+        }
+    }
+}

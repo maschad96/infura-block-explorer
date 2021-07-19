@@ -1,0 +1,33 @@
+/**
+Shared component variables
+*/
+$mobile-header-height: 80px;
+$sidebar-width: 100px;
+
+/**
+Breakpoints
+*/
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+/**
+Colors
+*/
+$grey-dark: #666666;
+$grey: #dcdbe7;
+$purple-100: #9b96bc;
+$purple-200: #7b74a2;
+$purple-300: #6f689b;
+$purple-400: #6c62ae;
+$purple-500: #584e9a;
+$purple-600: #3a307c;
+$purple-700: #494084;
+$white: #ffffff;
+
+$body-background: linear-gradient(120deg, $purple-500, $purple-600);

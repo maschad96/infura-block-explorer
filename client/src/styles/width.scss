@@ -1,0 +1,7 @@
+$widths: 25, 50, 75, 100;
+
+@each $width in $widths {
+    .is-width-#{$width} {
+        width: #{$width}#{'%'};
+    }
+}

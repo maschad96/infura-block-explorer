@@ -1,0 +1,32 @@
+$sizes: (0, 1, 2, 3, 4, 5, 6);
+$sides: (
+    l: 'left',
+    r: 'right',
+    t: 'top',
+    b: 'bottom',
+);
+
+@each $size in $sizes {
+    .p-#{$size} {
+        padding: #{$size}rem;
+    }
+    .m-#{$size} {
+        margin: #{$size}rem;
+    }
+    .py-#{$size} {
+        padding-top: #{$size}rem;
+        padding-bottom: #{$size}rem;
+    }
+    .px-#{$size} {
+        padding-left: #{$size}rem;
+        padding-right: #{$size}rem;
+    }
+    @each $letter, $side in $sides {
+        .m#{$letter}-#{$size} {
+            margin-#{$side}: #{$size}rem;
+        }
+        .p#{$letter}-#{$size} {
+            padding-#{$side}: #{$size}rem;
+        }
+    }
+}
